@@ -1,40 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blackstone Trial Analytics</title>
-  <link href="/bootstrap.css" rel="stylesheet"/>
-  <link href="/site.css" rel="stylesheet"/>
-<script src="/Scripts/modernizr-2.6.2.js"></script>
-</head>  
-<body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Blackstone Trial Analytics</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <li><a href="/Contact">Contact</a></li>
-          <li><a href="/Statistics">Statistics</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container body-content">
-    <p>Home Page Content Goes Here</p>
-    <hr />
-    <footer>
-      <p>&copy; 2016 - Blackstone Trial Consulting</p>
-    </footer>
-  </div>  
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
