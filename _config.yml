@@ -7,7 +7,7 @@
 
 # Site settings
 title: Blackstone Trial Analytics
-email: Contact@BlackstoneTrial.com
+email: contact@BlackstoneTrial.com
 description: > # this means to ignore newlines until "baseurl:"
   Blackstone Trial Analytics
 baseurl: "" # the subpath of your site, e.g. /blog
