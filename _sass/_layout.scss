@@ -99,7 +99,9 @@
 .site-footer {
     border-top: 1px solid $text-color;
     padding: $spacing-unit 0;
-    position:relative;
+    position:absolute;
+    bottom:0;
+    height:100px;
     width:100%;
     background-color:$background-color;
 }
@@ -170,6 +172,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-bottom:100;
 }
 
 .page-heading {
