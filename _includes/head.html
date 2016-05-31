@@ -11,6 +11,8 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   {% if page.url == "/defendants/" %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="defendant.js"></script>  
+    <script>
+      $.getScript("https://raw.githubusercontent.com/BlackstoneTrialAnalytics/BlackstoneTrialAnalytics.github.io/master/Defendants/defendant.js");
+    </script>  
   {% endif %}
 </head>
