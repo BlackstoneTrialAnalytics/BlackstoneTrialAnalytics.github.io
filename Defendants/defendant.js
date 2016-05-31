@@ -30,7 +30,7 @@ function loadDoc() {
             update(0);
         }
     };
-    xhttp.open("GET", "https://cdn.rawgit.com/BlackstoneTrialAnalytics/BlackstoneTrialAnalytics.github.io/master/Defendants/analytics.json", true);
+    xhttp.open("GET", "https://rawgit.com/BlackstoneTrialAnalytics/BlackstoneTrialAnalytics.github.io/master/Defendants/analytics.json", true);
     xhttp.send();
 }
 
