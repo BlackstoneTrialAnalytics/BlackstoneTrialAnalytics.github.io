@@ -161,8 +161,10 @@ pre {
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+	min-height:100%;
     margin-right: auto;
     margin-left: auto;
+	
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
@@ -195,6 +197,7 @@ pre {
 .hack {
     min-height:100%;
 	position:relative;
+	padding:0;
 }
 
 /**

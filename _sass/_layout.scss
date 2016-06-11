@@ -3,7 +3,7 @@
  */
 .site-header {
     border-bottom: 1px solid $text-color;
-    min-height: 56px;
+    min-height: 80px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -24,7 +24,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 80px;
 
     .menu-icon {
         display: none;
@@ -45,8 +45,6 @@
         top: 9px;
         right: $spacing-unit / 2;
         background-color: $background-color;
-        border: 1px solid $text-color;
-        border-radius: 5px;
         text-align: right;
 
         .menu-icon {
@@ -98,7 +96,7 @@
 .site-footer {
     position:absolute;
     bottom:0;
-    height:120px;
+    height:140px;
     width:100%;
 }
 
@@ -125,6 +123,7 @@
 }
 
 .footer-col-1 {
+	margin-top: $spacing-unit /2;
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
 }
