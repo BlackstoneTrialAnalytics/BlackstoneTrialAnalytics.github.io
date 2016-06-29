@@ -170,15 +170,6 @@ function pageLoad() {
 		var heading = $('<h4>' + chartHeading + '</h4>');
 		heading.appendTo(figureContainer);
 		
-		// Add legend to graph
-		var chartLegend	= tableData.chartLegend();
-		var legendList	= $('<ul class="legend"></ul>');
-		$.each(chartLegend, function(i) {			
-			var listItem = $('<li><span class="icon fig' + i + '"></span>' + this + '</li>')
-				.appendTo(legendList);
-		});
-		legendList.appendTo(figureContainer);
-		
 		// Add x-axis to graph
 		var xLegend	= tableData.xLegend();		
 		var xAxisList	= $('<ul class="x-axis"></ul>');
@@ -211,7 +202,14 @@ function pageLoad() {
 		
 		figureContainer.appendTo(container);
 
-		
+		// Add legend to graph
+		var chartLegend	= tableData.chartLegend();
+		var legendList	= $('<ul class="legend"></ul>');
+		$.each(chartLegend, function(i) {			
+			var listItem = $('<li><span class="icon fig' + i + '"></span>' + this + '</li>')
+				.appendTo(legendList);
+		});
+		legendList.appendTo(figureContainer);
 		
 		// Set individual height of bars
 		function displayGraph(bars, i) {		
