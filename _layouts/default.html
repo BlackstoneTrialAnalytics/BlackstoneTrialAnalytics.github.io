@@ -2,7 +2,11 @@
 <html>
 {% include head.html %}
 
+{% if page.url == "/defendants/" %}
+  <body onload="loadDoc()">
+{% else %}
   <body>
+{% endif%}
 <div class="hack">
     {% include header.html %}
 
