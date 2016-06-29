@@ -15,7 +15,7 @@ function pageLoad() {
 				createGraph('#data-table', '.chart');
 			}
 		};
-		xhttp.open("GET", "https://rawgit.com/BlackstoneTrialAnalytics/BlackstoneTrialAnalytics.github.io/master/analytics.json", true);
+		xhttp.open("GET", "https://rawgit.com/BlackstoneTrialAnalytics/BlackstoneTrialAnalytics.github.io/master/Analytics.json", true);
 		xhttp.send();
 	}
 
