@@ -4,7 +4,7 @@ layout: default
 <div class="home">
   <h1 class="page-heading">What We Do:</h1>
   <article>
-  	<div>
+  	<div style="float:left; width:420px; padding-right:40px; ">
 	Finding an attorney you can trust to give you the best possible defense is a challenge; until now, defendants have had to try to tease out useful information from anecdotes and top attorney lists of unknown pedigree. We have compiled years of court data to provide defendants with win-rate based attorney referrals for their particular case details.
 
     Currently, we offer our attorney referral services to people accused of crimes in:
@@ -18,20 +18,28 @@ layout: default
         <li>Prince William County</li>
     </ul>
 	</div>
-	<div>
-            I am a  
-        <select id="gender" onchange="pageLoad();" float:right;>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select>
-	<div>
-	<div>
-        Accused of a 
-        <select id="crime" onchange="pageLoad();">
-            <option value="M">Misdemeanor</option>
-            <option value="F">Felony</option>
-        </select>
-	</div>
+	
+    <div style="float:left; width:380px; ">
+	    <div style="width:100%; height:40px;">
+		    <div style="width:35%; float:left;">
+                I am a  
+		    </div>
+            <select id="gender" onchange="pageLoad()" style="float:left;">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+	    </div>
+	
+	    <div style="height:40px;">
+		    <div style="width:35%; float:left;">
+			    Accused of a 
+		    </div>
+            <select id="crime" onchange="pageLoad();" style="float:left;">
+                <option value="M">Misdemeanor</option>
+                <option value="F">Felony</option>
+            </select>
+	    </div>
+	
 	<div class="chart">
       <table id="data-table">
           <caption>Win Rates by Quintile</caption>
@@ -67,6 +75,13 @@ layout: default
               </tr>
           </tbody>
       </table>
+        
+
 	</div>
+        <div>
+            * This graph includes all attorneys that have resolved at least 50 cases before the courts pulled from our database of over 8 million court records across Northern Virginia.
+        </div>
+	</div>
+
   </article>
 </div>

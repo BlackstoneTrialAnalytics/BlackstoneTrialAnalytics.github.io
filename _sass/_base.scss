@@ -235,7 +235,7 @@ pre {
  */
 #figure {
    height: 380px;
-   width: 400px;
+   width: 380px;
    padding-left: 40px;
 }
 
@@ -378,4 +378,9 @@ pre {
 
 #data-table {
 	display:none;
+}
+
+#chart {
+    float:left;
+    width:420px;
 }
