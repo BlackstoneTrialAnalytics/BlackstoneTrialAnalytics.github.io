@@ -38,10 +38,13 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit/2;
+
 }
 
-
+h3 {
+    margin-top: $spacing-unit/2;
+}
 
 /**
  * Images
@@ -176,22 +179,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-.awrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
 
 .hack {
     min-height:100%;
@@ -235,8 +222,8 @@ pre {
  */
 #figure {
    height: 380px;
-   width: 380px;
-   padding-left: 40px;
+   width: 80%;
+   padding-left: 10%;
 }
 
 #figure ul {
@@ -264,8 +251,7 @@ pre {
    float: left;
    height: 20px;
    margin: 0;
-   padding: 10px 30px;
-   width: 120px;
+   width: 50%;
 }
 
 .legend span.icon {
@@ -283,15 +269,12 @@ pre {
    bottom: 0;
    color: #555;
    position: absolute;
-   text-align: center;
    width: 100%;
 }
 
 .x-axis li {
    float: left;
-   margin: 0 15px;
-   padding: 5px 0;
-   width: 30px;
+   width: 15%;
 }
 /* y-axis */
 
@@ -327,18 +310,16 @@ pre {
 .bar-group {
    float: left;
    height: 100%;
-   margin: 0 15px;
    position: relative;
-   width: 30px;
+   width: 15%;
 }
 .bar {
-   border-radius: 3px 3px 0 0;
    bottom: 0;
    cursor: pointer;
-   height: 0;
    position: absolute;
    text-align: center;
-   width: 24px;
+   width:40%;
+   max-width: 24px;
 }
 
 .bar span {
@@ -365,7 +346,7 @@ pre {
 }
 
 .bar.fig1 {
-   left: 26px;
+   left: 30%;
 }
 
 .fig0 {
@@ -382,5 +363,5 @@ pre {
 
 #chart {
     float:left;
-    width:420px;
+    width:100%;
 }
