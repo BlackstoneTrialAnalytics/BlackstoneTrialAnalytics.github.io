@@ -2,7 +2,12 @@
 <html>
 {% include head.html %}
 
-  <body>
+
+{% if page.layout == 'default' %}
+  <body style="background: url(Court.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+{% else %}
+ <body>
+{% endif %}
 <div class="hack">
     {% include header.html %}
 
