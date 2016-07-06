@@ -11,7 +11,7 @@ email: contact@blackstonetrial.com
 phone: 703.537.0731
 address: 4023 Chain Bridge Road, Suite 11, Fairfax, VA 22030
 description: > # this means to ignore newlines until "baseurl:"
-  A Win-rate based Northern Virginia attorney referrals for defendants and consulting for law firms.
+  Win-rate based Northern Virginia attorney referrals for defendants and consulting for law firms.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blackstonetrial.com" # the base hostname & protocol for your site
 
