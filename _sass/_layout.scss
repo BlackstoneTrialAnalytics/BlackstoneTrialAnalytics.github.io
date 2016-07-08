@@ -212,3 +212,33 @@ float: left;
 max-width: 500px;
 min-width:50%;
 }
+
+.homebutton {
+	 
+	font-weight:400; 
+	font-size:2em; 
+	width:240px; 
+	text-align:center; 
+	appearance:button; 
+	-webkit-appearance:button; 
+	-moz-appearance:button; 
+	text-decoration:none; 
+	background-color:#13294b; 
+	margin-bottom:10%; 
+	margin-left:15%; 
+	float:left;
+	
+	@include media-query($on-palm) {
+		font-weight:400; 
+		font-size:2em; 
+		width:80%; 
+		text-align:center; 
+		appearance:button; 
+		-webkit-appearance:button; 
+		-moz-appearance:button; 
+		text-decoration:none; 
+		background-color:#13294b;
+		margin-bottom:10%; 
+		margin-left:-15px;
+	}
+}
