@@ -176,8 +176,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
-	padding-bottom:160px;
+	padding-bottom: 110.5px;
 }
 
 .page-heading {
@@ -213,14 +212,11 @@ max-width: 500px;
 min-width:50%;
 }
 
-.homeadjust {
-	@include media-query($on-laptop){
-		margin-top:40%;
-	}
-	
-	@include media-query($on-palm){
-		margin-top:0%;
-	}
+.hack {
+    min-height:100vh;
+	min-width:320px;
+	position:relative;
+	padding:0;
 }
 
 .homebutton {
