@@ -49,23 +49,23 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
+        top: 15px;
+        right: $spacing-unit / 4;
         background-color: $background-color;
         text-align: right;
 
         .menu-icon {
             display: block;
             float: right;
-            width: 45px;
+            width: 30px;
             height: 26px;
             line-height: 0;
             padding-top: 5px;
             text-align: center;
 
             > svg {
-                width: 36px;
-                height: 30px;
+                width: 24px;
+                height: 20px;
 
                 path {
                     fill: $text-color;
