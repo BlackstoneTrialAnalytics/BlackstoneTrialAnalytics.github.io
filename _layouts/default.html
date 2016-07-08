@@ -3,15 +3,19 @@
 {% include head.html %}
 
 
-{% if page.layout == 'default' %}
-  <body style=" background: url(Court.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-{% else %}
- <body>
-{% endif %}
-<div class="hack">
+
+  <body>
+
+  {% if page.layout == 'default' %}
+<div class="hack" style=" background: url(Court.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+	{% else %}
+	<div class="hack">
+	{% endif %}
     {% include header.html %}
 
-    <div class="page-content">
+	
+    <div class="page-content" >
+
       <div class="wrapper">
         {{ content }}
       </div>
