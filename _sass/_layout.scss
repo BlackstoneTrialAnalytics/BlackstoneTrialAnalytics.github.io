@@ -213,6 +213,16 @@ max-width: 500px;
 min-width:50%;
 }
 
+.homeadjust {
+	@include media-query($on-laptop){
+		margin-top:40%;
+	}
+	
+	@include media-query($on-palm){
+		margin-top:0%;
+	}
+}
+
 .homebutton {
 	 
 	font-weight:400; 
