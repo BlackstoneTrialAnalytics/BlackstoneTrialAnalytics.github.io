@@ -3,17 +3,34 @@ permalink: /contact/
 layout: default
 title: Contact
 ---
-
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAflaC-TNIdczIy0554huie6fubBCicNiY">
+</script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(38.845558,-77.3069192),
+    zoom:19,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div class="home">
   <h1 class="page-heading">{{page.title}}:</h1>
   <article>
-      <div class="contact">
-          <ul class="contact-list">
+      <div class="contact" >
+          <ul class="contact-list"">
               <li>{{ site.title }} LLC</li>
               <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
               <li><a href="tel:{{ site.phone }}">{{site.phone}}</a></li>
               <li><a href="https://www.google.com/maps/place/Blackstone+Trial+Analytics,+LLC/@38.8455086,-77.308786,17z/data=!4m13!1m7!3m6!1s0x89b64e9258c0f639:0x8b562a5f57d8c1fd!2s4023+Chain+Bridge+Rd,+Fairfax,+VA+22030!3b1!8m2!3d38.8455044!4d-77.306592!3m4!1s0x89b64e9258a70b3d:0xe493038f03702b46!8m2!3d38.8455111!4d-77.3065893">{{site.address}}</a></li>
           </ul>
+		  
       </div>
+	  <div id="googleMap" style="float:left; max-width:100%;  width:400px; height:340px;"></div>
+	  
+	  
   </article>
 </div>
