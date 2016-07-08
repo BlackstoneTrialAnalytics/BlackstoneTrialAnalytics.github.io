@@ -16,7 +16,11 @@
 	
     <div class="page-content" >
 
+	{% if page.title == 'home' %}
       <div class="wrapper awrapper">
+	  {% else %}
+	  <div class="wrapper">
+	  {%endif%}
         {{ content }}
       </div>
     </div>
