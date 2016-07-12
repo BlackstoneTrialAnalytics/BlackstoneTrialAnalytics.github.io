@@ -159,7 +159,6 @@
  * Page content
  */
 .page-content {
-	padding-bottom: 110.5px;
 }
 
 .page-heading {
@@ -213,6 +212,7 @@ min-width:50%;
 	text-decoration:none; 
 	background-color:#13294b; 
 	
+	
 	@include media-query($on-palm) {
 		font-weight:400; 
 		font-size:2em; 
@@ -224,6 +224,7 @@ min-width:50%;
 		text-decoration:none; 
 		background-color:#13294b;
 		margin-bottom:10%;
+		
 	}
 }
 
