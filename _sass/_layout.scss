@@ -220,6 +220,8 @@ min-width:50%;
 		text-align:center; 
 		margin-bottom:10%;
 		float:left;
+		max-width: -webkit-calc(100vw - (#{$spacing-unit}));
+		max-width: calc(100vw - (#{$spacing-unit}));
 	}
 }
 
