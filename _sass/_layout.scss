@@ -222,6 +222,7 @@ min-width:50%;
 		float:left;
 		max-width: -webkit-calc(100vw - (#{$spacing-unit}));
 		max-width: calc(100vw - (#{$spacing-unit}));
+		-webkit-appearance:none;
 	}
 }
 
