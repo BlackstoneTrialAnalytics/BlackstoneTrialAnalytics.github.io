@@ -159,7 +159,7 @@
  * Page content
  */
 .page-content {
-	padding-bottom: 180px;
+	padding-bottom:137.5px;
 }
 
 .page-heading {
@@ -224,7 +224,6 @@ min-width:50%;
 
 .leftbutton {
 	margin-left:10%;
-	
 	@include media-query($on-palm) {
 	margin-left:0;
 	}
