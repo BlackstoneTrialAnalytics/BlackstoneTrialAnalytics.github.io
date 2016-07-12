@@ -209,23 +209,16 @@ min-width:50%;
 	text-align:center; 
 	appearance:button; 
 	-webkit-appearance:button; 
-	-moz-appearance:button; 
+	-moz-appearance:button;
 	text-decoration:none; 
 	background-color:#13294b; 
 	
 	
 	@include media-query($on-palm) {
-		font-weight:400; 
-		font-size:2em; 
-		min-width:100%; 
+		width:100%; 
 		text-align:center; 
-		appearance:button; 
-		-webkit-appearance:button; 
-		-moz-appearance:button; 
-		text-decoration:none; 
-		background-color:#13294b;
 		margin-bottom:10%;
-		
+		float:left;
 	}
 }
 
@@ -236,7 +229,6 @@ min-width:50%;
 	width:100%;
 	
 	@include media-query($on-palm) {
-		display:block;
-		
+		display:inline-block;
 	}
 }
