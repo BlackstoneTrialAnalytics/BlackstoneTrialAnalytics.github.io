@@ -212,6 +212,8 @@ min-width:50%;
 	-moz-appearance:button; 
 	text-decoration:none; 
 	background-color:#13294b; 
+	margin-bottom:10%; 
+	margin-left:15%; 
 	float:left;
 	
 	@include media-query($on-palm) {
@@ -224,11 +226,7 @@ min-width:50%;
 		-moz-appearance:button; 
 		text-decoration:none; 
 		background-color:#13294b;
+		margin-bottom:10%; 
+		margin-left:10%;
 	}
-}
-
-.homeadjust {
-	display: flex;
-    align-items: center;
-    justify-content: center;
 }
