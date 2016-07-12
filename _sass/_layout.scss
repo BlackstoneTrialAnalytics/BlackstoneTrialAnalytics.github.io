@@ -216,7 +216,7 @@ min-width:50%;
 	
 	
 	@include media-query($on-palm) {
-		width:calc(10vw); 
+		width:calc(100%); 
 		text-align:center; 
 		margin-bottom:10%;
 		float:left;
