@@ -191,8 +191,13 @@
 
 .contact {
 float: left;
-max-width: 500px;
-min-width:50%;
+width:50%;
+min-width:400px;
+
+@include media-query($on-palm) {
+	width:100%;
+	min-width:100%;
+}
 }
 
 .hack {
@@ -242,4 +247,24 @@ min-width:50%;
 	@include media-query($on-palm) {
 		display:inline-block;
 	}
+}
+
+.form {
+	width:400px;
+	max-width:100%;
+}
+
+#googleMap {
+min-width:400px;
+max-width:50%;
+height:340px;
+
+@include media-query($on-palm) {
+	float:left;
+	width:100%;
+	min-width:0;
+	max-width:100%;
+	margin-bottom:20px;
+}
+
 }

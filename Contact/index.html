@@ -19,33 +19,40 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <div class="home" >
-  <h3 class="page-heading">{{page.title}}:</h3>
-  <article>
-      <div class="contact" >
-          <ul class="contact-list"">
-              <li>{{ site.title }} LLC</li>
-              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              <li><a href="tel:{{ site.phone }}">{{site.phone}}</a></li>
-              <li><a href="https://www.google.com/maps/place/Blackstone+Trial+Analytics,+LLC/@38.8455086,-77.308786,17z/data=!4m13!1m7!3m6!1s0x89b64e9258c0f639:0x8b562a5f57d8c1fd!2s4023+Chain+Bridge+Rd,+Fairfax,+VA+22030!3b1!8m2!3d38.8455044!4d-77.306592!3m4!1s0x89b64e9258a70b3d:0xe493038f03702b46!8m2!3d38.8455111!4d-77.3065893">{{site.address}}</a></li>
-          </ul>
-		  
-      </div>
-	  
-	<!-- Temporary code until we make our own solution in the future -->  
-	<!-- Do not change the code! -->
-	<a id="foxyform_embed_link_799586" href="http://www.foxyform.com/">foxyform</a>
-	<script type="text/javascript">
-	(function(d, t){
-		var g = d.createElement(t),
-		s = d.getElementsByTagName(t)[0];
-		g.src = "http://www.foxyform.com/js.php?id=799586&sec_hash=bf810b0fd3b&width=350px";
-		s.parentNode.insertBefore(g, s);
-	}(document, "script"));
-	</script>
-	<!-- Do not change the code! -->
-	  
-	  <div id="googleMap" style="float:left; max-width:100%;  width:400px; height:340px; margin-bottom:40px;"></div>
-	  
-	  
+<h3 class="page-heading">{{page.title}}:</h3>
+<article>
+    <div class="contact" >
+        <ul class="contact-list"">
+            <li>{{ site.title }} LLC</li>
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a href="tel:{{ site.phone }}">{{site.phone}}</a></li>
+            <li><a href="https://www.google.com/maps/place/Blackstone+Trial+Analytics,+LLC/@38.8455086,-77.308786,17z/data=!4m13!1m7!3m6!1s0x89b64e9258c0f639:0x8b562a5f57d8c1fd!2s4023+Chain+Bridge+Rd,+Fairfax,+VA+22030!3b1!8m2!3d38.8455044!4d-77.306592!3m4!1s0x89b64e9258a70b3d:0xe493038f03702b46!8m2!3d38.8455111!4d-77.3065893">{{site.address}}</a></li>
+        </ul>
+		
+		<form accept-charset="utf-8" action="https://formspree.io/davidwnastase@gmail.com" method="post" style="width: 100%;">
+			<p class="form">
+				Name:  <br />
+				<input type="text" class="form"  name="name" value="" />
+			</p>
+			<p class="form">E-Mail: <span style="font-weight: bolder; color: red;">*</span> 
+				<br />
+				<input type="email" class="form"  name="email" value="" />
+			</p>
+			<input type="text" name="_gotcha" style="display:none" />
+			<p class="form">
+				Subject:  <br />
+				<input type="text" class="form"  name="_subject" value="" />
+			</p>
+			<p class="form">
+			Message: <span style="font-weight: bolder; color: red;">*</span> <br />
+			<textarea name="content" rows="9" class="form"></textarea></p>			
+			<div id="bottom">
+				<input type="submit" value="Send message!" class="formsubmit" /> 
+				<p class="formklein">All fields marked with <span style="font-weight: bolder; color: red;">*</span> are required.</p>
+			</div>				
+		</form>
+		
+    </div>	  
+	<div id="googleMap"></div>
   </article>
 </div>
