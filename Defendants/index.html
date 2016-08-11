@@ -5,15 +5,18 @@ title: Defendants
 ---
 <div class="home">
 	<article>
+	<br/>
+	Our research shows that both your attorney and your complainant are important determinants of your trial outcome. Attorneys differ in how skilled or aggressive they are countering a case made by the prosecution and complainants differ in the quantity and quality of evidence they supply against the defendant. Check out our graphs below to see how attorney and complainant quality affect trial outcomes in your district.
+	<br/>
+	<br/>
 		<div style="float:left; width:100%;">
-			<h3>Average Lawyer Win Rates</h3>
 			<div style="width:100%; height:40px;">
 				<div style="width:35%; max-width:100px; float:left;">
 					I am a  
 				</div>
             <select id="gender" onchange="pageLoad()" style="float:left;">
-                <option value="M">Male</option>
-                <option value="F">Female</option>
+                <option value="MALE">Male</option>
+                <option value="FEMALE">Female</option>
             </select>
 			</div>
 	
@@ -22,14 +25,33 @@ title: Defendants
 					Accused of a 
 				</div>
 				<select id="crime" onchange="pageLoad();" style="float:left;">
-					<option value="M">Misdemeanor</option>
-					<option value="F">Felony</option>
+					<option value="MISDEMEANOR">Misdemeanor</option>
+					<option value="FELONY">Felony</option>
 				</select>
 			</div>
-			<div class="chart" style="max-width:600px"></div>
-	
-			We calculated the win-rate for each attorney with over 50 resolved cases before the various courts in our database of over 8 million records and sorted them into quintiles. The quintile average is reported. Public defender (PD) win-rates have been reported as well.
-			<div>
+			
+			<div style="width:100%; height:40px;">
+				<div style="width:35%; max-width:100px; float:left;">
+					In
+				</div>
+            <select id="place" onchange="pageLoad()" style="float:left;">
+				<option value="ARLINGTON">Arlington</option>
+				<option value="FAIRFAX CITY">Fairfax City</option>
+				<option value="FAIRFAX COUNTY">Fairfax County</option>
+				<option value="LOUDOUN">Loudoun County</option>
+				<option value="PRINCE WILLIAM">Prince William County</option>
+            </select>
+			</div>
+			</div>
+			
+			<div class="chart" ></div>
+
+			<div class="chart2"></div>
+			
+			<div style="float:left;">
+			<br/>
+			We calculated the win-rate for each attorney and police officer with over 20 resolved cases before the various courts in our database of over 8 million records and sorted them into quintiles. The quintile average is reported. Public defender (PD) win-rates have been reported as well. Note that the Fairfax City General District Court does not hear felony cases and the Prince William County General District Court does not make nearly as much use of public defenders as other districts; generally indigent Prince William defendants are appointed an attorney in private practice.
+			
 				<div>
 					<h3>The Problem</h3> 
 					When accused of a crime, most defendants want to know one thing:
@@ -67,7 +89,7 @@ title: Defendants
 				</div>
 			</div>
 		<table id="data-table">
-			<caption></caption>
+			<caption> Defendant Win-Rate By Attorney Type</caption>
 			<thead>
 				<tr>
 					<td>&nbsp;</td>
@@ -81,7 +103,7 @@ title: Defendants
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row">Wins</th>
+					<th scope="row">Win</th>
 					<td id="PDW"></td>
 					<td id="Q1W"></td>
 					<td id="Q2W"></td>
@@ -90,7 +112,7 @@ title: Defendants
 					<td id="Q5W"></td>
 				</tr>
 				<tr>
-					<th scope="row">Pleas</th>
+					<th scope="row">Plea</th>
 					<td id="PDP"></td>
 					<td id="Q1P"></td>
 					<td id="Q2P"></td>
@@ -98,8 +120,38 @@ title: Defendants
 					<td id="Q4P"></td>
 					<td id="Q5P"></td>
 				</tr>
-				</tbody>
-			</table>
-		</div>
+			</tbody>
+		</table>
+				<table id="data-table2">
+			<caption>Win-Rate By Complainant Type</caption>
+			<thead>
+				<tr>
+					<td>&nbsp;</td>
+					<th scope="col">Q1</th>
+					<th scope="col">Q2</th>
+					<th scope="col">Q3</th>
+					<th scope="col">Q4</th>
+					<th scope="col">Q5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Win</th>
+					<td id="P1W"></td>
+					<td id="P2W"></td>
+					<td id="P3W"></td>
+					<td id="P4W"></td>
+					<td id="P5W"></td>
+				</tr>
+				<tr>
+					<th scope="row">Plea</th>
+					<td id="P1P"></td>
+					<td id="P2P"></td>
+					<td id="P3P"></td>
+					<td id="P4P"></td>
+					<td id="P5P"></td>
+				</tr>
+			</tbody>
+		</table>
 	</article>
 </div>

@@ -35,7 +35,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, figure2
 %vertical-rhythm {
         margin-bottom: $spacing-unit/2;
 
@@ -214,13 +214,13 @@ pre {
 /**
  * Graph
  */
-#figure {
+#figure, #figure2 {
    height: 320px;
    width: 80%;
    padding-left: 10%;
 }
 
-#figure ul {
+#figure ul, #figure2 ul {
    list-style: none;
    margin: 0;
    padding: 0;
@@ -351,11 +351,25 @@ pre {
    background: #65c2e8 url(/bar-02-bg.gif) 0 0 repeat-y;
 }
 
-#data-table {
+#data-table, #data-table2 {
 	display:none;
 }
 
-#chart {
-    float:left;
-    width:100%;
+.chart, .chart2 {
+    width:50%;
+	max-width:500px;
+	
+	@include media-query($on-palm) {
+		width:100%;
+		max-width:100%;
+		
+	}
+}
+
+.chart{
+	float:left;
+}
+
+.chart2 {
+	float:right;
 }
